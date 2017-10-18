@@ -16,3 +16,7 @@ a {
 .center-text {
   text-align: center;
 }
+
+.schedule-frame {
+  margin: 15px 15px 15px 15px;
+}
