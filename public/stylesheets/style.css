@@ -17,6 +17,10 @@ a {
   text-align: center;
 }
 
+.text-align-left {
+  text-align: left;
+}
+
 .schedule-frame {
   margin: 15px 15px 15px 15px;
 }
