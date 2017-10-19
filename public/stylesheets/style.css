@@ -24,3 +24,11 @@ a {
 .schedule-frame {
   margin: 15px 15px 15px 15px;
 }
+
+.my-card-body {
+  padding: 40px 0px 40px 0px;
+}
+
+.my-card {
+  margin: 25px;
+}

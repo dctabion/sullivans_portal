@@ -17,12 +17,23 @@ router.get('/schedule', function(req, res, next) {
   });
 });
 
-/* GET policies page. */
-router.get('/policies', function(req, res, next) {
-  res.render('policies',
+/* GET gig details page. */
+router.get('/terms_policies', function(req, res, next) {
+  res.render('terms_policies',
     { venue: 'Sullivan\'s Steakhouse',
-      bandleader: 'Daniel Tabion'
+      bandleader: 'Daniel Tabion',
+      pay: '$100'
   });
 });
+
+/* GET policies page. */
+router.get('/terms_policies', function(req, res, next) {
+  res.render('terms_policies',
+    { venue: 'Sullivan\'s Steakhouse',
+      bandleader: 'Daniel Tabion',
+      pay: '$125'
+  });
+});
+
 
 module.exports = router;
