@@ -9,7 +9,7 @@ a {
 
 .border-top {
   border-top: 1px solid #ccc;
-    margin: 1em 0;
+  margin: 1em 0;
     /*padding-bottom: 50;*/
 }
 
@@ -35,4 +35,9 @@ a {
 
 .test-background-color {
   background-color: pink;
+}
+
+.remove-side-margins {
+  margin-left: -20px;
+  margin-right: -20px;
 }
