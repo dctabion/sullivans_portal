@@ -1,23 +1,22 @@
 extends layout
 
 block content
-  h1 #{venue}
   h3 Bandleader: #{bandleader}
   
   div.card.my-card    
     div.card-body
       h3.card-header GIG DETAILS
       div.text-align-left.my-card-body
-        | $100 + tips<br><br>
-        | Thu, 10/05/17<br>
-        | 5:30pm-9:30pm<br><br>
-        | Sullivan's Steak House - NAPERVILLE location.<br>
-        | 244 S Main St, Naperville, IL 60540<br>
-        | MAP: <a href="https://goo.gl/maps/Vnrnhkhuqby", target="_blank">Click here</a><br><br>
-        | DRESS: Look sharp. Jacket, pants, dress shoes. Darker colors. Tie is a nice option.<br>
-        | GROUP: Piano/Drums duo (strange, I know)<br>
-        | MUSIC: Anything you want to play. For example: jazz, pop, blues, R&B, soul, funk, etc.<br><br>
-        | $7 bar menu specials on Thursdays.<br><br>
+        | $#{pay} + tips<br><br>
+        | #{day}, #{date}<br>
+        | #{startTime} - #{endTime}<br><br>
+        | #{venueCompleteName}<br>
+        | #{venueAddress}<br>
+        | MAP: <a href="#{mapURL}", target="_blank">Click here</a><br><br>
+        | DRESS: #{dress}<br>
+        | INSTRUMENTATION: #{instrumentation}<br>
+        | MUSIC: #{music}<br><br>
+        | FOOD: #{food}<br><br>
   div.card.my-card  
     div.card-body
       div.card-header
