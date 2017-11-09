@@ -33,7 +33,7 @@ router.get('/terms_policies', function(req, res, next) {
     dress: "Look sharp. Jacket, pants, dress shoes. Dark colors. Tie is a nice option.",
     instrumentation: "Piano/Drums duo (strange, I know)",
     music: "Anything you want to play. For example: jazz, pop, blues, R&B, soul, funk, etc.",
-    food: "$7 bar menu specials on Thursdays."
+    food: ""
   }
 
   if (req.query.venue) {
@@ -47,7 +47,8 @@ router.get('/terms_policies', function(req, res, next) {
       pageData.endTime = "9:30pm";
       pageData.venueCompleteName = "Sullivan's Steak House - NAPERVILLE location.";
       pageData.venueAddress = "244 S Main St, Naperville, IL 60540";
-      pageData.mapURL = "https://goo.gl/maps/Vnrnhkhuqby";
+      pageData.mapURL = "https://goo.gl/maps/Vnrnhkhuqby"
+      pageData.food = "$7 bar menu specials on Thursdays."
     }
 
     else if(req.query.venue == "SSHLS") {
@@ -60,6 +61,7 @@ router.get('/terms_policies', function(req, res, next) {
       pageData.venueCompleteName = "Sullivan's Steak House - LINCOLNSHIRE location.";
       pageData.venueAddress = "250 Marriott Dr, Lincolnshire, IL 60069";
       pageData.mapURL = "https://goo.gl/maps/sqFvB8Df9rt";
+      pageData.food = "No break on food & drink."
     }
   }
   else {
