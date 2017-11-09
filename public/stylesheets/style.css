@@ -1,7 +1,29 @@
 body {
   padding: 50px;
+  /*padding: 0px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*background-color: pink;*/
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    /*background-color: green;*/
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .col {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 
 a {
   color: #00B7FF;
@@ -29,12 +51,26 @@ a {
   padding: 40px 0px 40px 0px;
 }
 
+@media screen and (max-width: 600px) {
+  .my-card-body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+
 .my-card {
   margin: 25px;
 }
 
+@media screen and (max-width: 600px) {
+  .my-card {
+    margin: 0px;
+  }
+}
+
 .test-background-color {
-  background-color: pink;
+  /*background-color: pink;*/
 }
 
 .remove-side-margins {
