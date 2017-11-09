@@ -56,5 +56,15 @@ app.use(function(err, req, res, next) {
   });
 });
 
+/******** Create and initialize global store ********/
+global.myAppVars = {};
+
+console.log('NODE_ENV: ', process.env.NODE_ENV);
+if (process.env.NODE_ENV === 'production') {
+  global.myAppVars.hostname = "https://arcane-river-74400.herokuapp.com/";
+}
+else {
+  global.myAppVars.hostname = "http://localhost:3000/";
+}
 
 module.exports = app;

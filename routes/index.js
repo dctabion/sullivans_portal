@@ -61,7 +61,7 @@ router.get('/terms_policies', function(req, res, next) {
       pageData.venueCompleteName = "Sullivan's Steak House - LINCOLNSHIRE location.";
       pageData.venueAddress = "250 Marriott Dr, Lincolnshire, IL 60069";
       pageData.mapURL = "https://goo.gl/maps/sqFvB8Df9rt";
-      pageData.food = "No break on food & drink."
+      // pageData.food = "No break on food & drink."
     }
   }
   else {

@@ -16,7 +16,9 @@ block content
         | DRESS: #{dress}<br><br>
         | INSTRUMENTATION: #{instrumentation}<br><br>
         | MUSIC: #{music}<br><br>
-        | FOOD: #{food}<br><br>
+        unless food == ""
+          | FOOD: #{food}<br><br>
+        
   div.card.my-card  
     div.card-body
       div.card-header
