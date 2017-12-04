@@ -47,8 +47,9 @@ router.get('/terms_policies', function(req, res, next) {
       pageData.endTime = "9:30pm";
       pageData.venueCompleteName = "Sullivan's Steak House - NAPERVILLE location.";
       pageData.venueAddress = "244 S Main St, Naperville, IL 60540";
-      pageData.mapURL = "https://goo.gl/maps/Vnrnhkhuqby"
-      pageData.food = "$7 bar menu specials on Thursdays."
+      pageData.mapURL = "https://goo.gl/maps/Vnrnhkhuqby";
+      pageData.food = "$7 bar menu specials on Thursdays.";
+      pageData.setTimes = "Naperville: Musical performance should consist of 45 minute sets with 15 minute breaks or 1 hour sets with 20 minute breaks. At no time should any breaks exceed 20 minutes.";
     }
 
     else if(req.query.venue == "SSHLS") {
@@ -62,6 +63,7 @@ router.get('/terms_policies', function(req, res, next) {
       pageData.venueAddress = "250 Marriott Dr, Lincolnshire, IL 60069";
       pageData.mapURL = "https://goo.gl/maps/sqFvB8Df9rt";
       // pageData.food = "No break on food & drink."
+      pageData.setTimes = "Lincolnshire: Musical performance should consist of 4 - 45 minute sets with 4 -15 minute breaks. The last set will be (30) minutes with no break.";
     }
   }
   else {
@@ -103,8 +105,7 @@ router.post('/send_terms_policies', function(req, res, next) {
       pageData.mapURL = "https://goo.gl/maps/Vnrnhkhuqby";
       pageData.food = "$7 bar menu specials on Thursdays.";
       pageData.musicianName = req.params.musicianName;
-      pageDate.cellNumber = req.params.cellNumber
-      pageDate.
+      pageDate.cellNumber = req.params.cellNumber;
     }
 
     else if(req.query.venue == "SSHLS") {
